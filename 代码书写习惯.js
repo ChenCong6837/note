@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-14 20:10:15
+ * @Last Modified time: 2018-03-14 20:13:54
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -133,6 +133,18 @@
     <html lang="en-us">
         ...
     </html>
+
+2.4 字符编码
+    通过声明一个明确的字符编码，让浏览器轻松、快速的确定合适网页内容的渲染方式，通常指定为'UTF-8'。
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+        </head>
+        ...
+    </html>
+
 
 
 
