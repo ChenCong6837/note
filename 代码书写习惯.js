@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-14 19:55:57
+ * @Last Modified time: 2018-03-14 19:56:34
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -112,7 +112,9 @@
     </body>
 </html>
 
-
+2.2 HTML5 DOCTYPE
+    在页面开头使用这个简单的doctype来启用标准模式，使其在每个浏览器中尽可能一致地展现；
+    虽然
     
     
     
