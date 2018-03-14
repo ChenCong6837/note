@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-14 19:56:34
+ * @Last Modified time: 2018-03-14 20:10:15
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -114,7 +114,29 @@
 
 2.2 HTML5 DOCTYPE
     在页面开头使用这个简单的doctype来启用标准模式，使其在每个浏览器中尽可能一致地展现；
-    虽然
+    虽然doctype不区分大小写，但是按照惯例，DOCTYPE大写。
+
+    <!DOCTYPE html>
+    <html>
+    	...
+    </html>
+
+2.3 lang属性
+    根据HTML5规范：应在html标签上加上lang属性。这会给语音工具和翻译工具帮助，告诉它们应当怎么去发音和翻译。
+    更多关于lang属性的说明：http://w3c.github.io/html/semantics.html#the-html-element
+    在sitepoint上可以查到语言列表：https://www.sitepoint.com/iso-2-letter-language-codes/
+    但sitepoint只是给出了语言的大类，例如中文只给出了zh，但是没有区分香港，台湾，大陆。
+    而微软给出了一份更加详细的语言列表：https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/
+    其中细分了zh-cn，zh-hk，zh-tw。
+
+    <!DOCTYPE html>
+    <html lang="en-us">
+        ...
+    </html>
+
+
+
+
     
     
     
