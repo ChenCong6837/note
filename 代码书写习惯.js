@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-14 18:50:21
+ * @Last Modified time: 2018-03-14 18:55:43
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -73,8 +73,12 @@
     全部采用小写的方式，以下划线分隔。
     例：my_project_name
 
+1.2 目录命名
+    参照项目命名规则；
+    有复数结构时，要采用复数命名法。
+    例：scripts,styles,images,data_models
 
-
+    
 
 
 
