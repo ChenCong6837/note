@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-14 18:55:43
+ * @Last Modified time: 2018-03-14 18:57:20
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -77,6 +77,11 @@
     参照项目命名规则；
     有复数结构时，要采用复数命名法。
     例：scripts,styles,images,data_models
+
+1.3 JS文件命名
+    参照项目命名规则。
+    例：account_model.js
+
 
     
 
