@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-14 18:59:58
+ * @Last Modified time: 2018-03-14 19:55:57
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -69,6 +69,7 @@
 
 //==========内容==========
 /*
+==========1.命名规则==========
 1.1 项目命名
     全部采用小写的方式，以下划线分隔。
     例：my_project_name
@@ -90,8 +91,35 @@
     参照项目命名规则。
     例：error_report.html
 
+==========2.HTML==========
+2.1 语法
+    (1) 缩进使用soft tab(4个空格)；
+    (2) 嵌套的节点应该缩进；
+    (3) 在属性上，使用双引号，不要使用单引号； 
+    (4) 不要在自动闭合标签结尾处使用斜线(HTML5 规范指出他们是可选的);
+    (5) 不要忽略可选的关闭标签，例：</li> 和 </body> 
+ 
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page title</title>
+    </head>
+    <body>
+        <img src="images/company_logo.png" alt="Company">
+
+        <h1 class="hello-world">Hello, world!</h1>
+    </body>
+</html>
 
 
+    
+    
+    
+    () 
+
+
+    
 
 
 */
