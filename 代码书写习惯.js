@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-14 20:13:54
+ * @Last Modified time: 2018-03-14 20:19:16
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -144,6 +144,21 @@
         </head>
         ...
     </html>
+
+2.5 IE兼容模式
+    用<meta>标签可以指定页面应该用什么版本的IE来渲染；
+    了解更多：https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do
+    不同DOCTYPE在不同浏览器下会触发不同的渲染模式：https://hsivonen.fi/doctype/
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        </head>
+        ...
+    </html>
+
+    
 
 
 
