@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-13 19:09:51
+ * @Last Modified time: 2018-03-14 18:50:21
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -65,4 +65,20 @@
     4.17 undefined
     4.18 jshint
     4.19 杂项
+*/
+
+//==========内容==========
+/*
+1.1 项目命名
+    全部采用小写的方式，以下划线分隔。
+    例：my_project_name
+
+
+
+
+
+
+
+
+
 */
