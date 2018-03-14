@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-14 18:58:43
+ * @Last Modified time: 2018-03-14 18:59:58
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -86,7 +86,9 @@
     参照项目命名规则。
     例：retina_sprites.scss
     
-
+1.5 HTML文件命名
+    参照项目命名规则。
+    例：error_report.html
 
 
 
