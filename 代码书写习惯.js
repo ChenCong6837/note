@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-15 19:39:33
+ * @Last Modified time: 2018-03-15 19:41:33
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -228,6 +228,9 @@
     <!-- Better -->
     <img class="avatar" src="...">
 
+2.11 实用高于完美
+    尽量遵循HTML标准和语义，但是不应该以浪费实用性作为代价；
+    任何时候都要用尽量下的复杂度和尽量少的标签来解决问题。
 
 
 
