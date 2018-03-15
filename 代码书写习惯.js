@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-15 19:37:26
+ * @Last Modified time: 2018-03-15 19:39:33
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -216,6 +216,17 @@
 
 2.9 JS生成标签
     在JS文件中生成标签让内容变得更难查找，更难编辑，性能更差，应该尽量避免这种情况的出现。
+
+2.10 减少标签数量
+    在编写HTML代码时，需要尽量避免多余的父节点；很多时候，需要通过迭代和重构来使HTML变得更少。
+
+    <!-- Not well -->
+    <span class="avatar">
+        <img src="...">
+    </span>
+
+    <!-- Better -->
+    <img class="avatar" src="...">
 
 
 
