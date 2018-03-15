@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-15 19:23:39
+ * @Last Modified time: 2018-03-15 19:30:02
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -181,8 +181,25 @@
             ...
         </script>
 
+2.7 属性顺序
+    属性应该按照特定的顺序出现以保证易读性；
+        (1) class
+        (2) id 
+        (3) name
+        (4) data-*
+        (5) src, for, type, href, value, max-length, max, min, pattern
+        (6) placeholder, title, alt
+        (7) aria-*, role 
+        (8) required, readonly, disabled
 
+    class 是为高可复用性组件设计的，所以应处在第一位；
+    id更加具体且应该尽量少使用，所以将它放在第二位。
 
+    <a class="..." id="..." data-modal="toggle" href="#">Example link</a>
+
+    <input class="form-control" type="text">
+
+    <img src="..." alt="...">
 
 
 
