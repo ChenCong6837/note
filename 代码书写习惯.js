@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-15 19:41:33
+ * @Last Modified time: 2018-03-15 19:43:11
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -99,27 +99,26 @@
     (4) 不要在自动闭合标签结尾处使用斜线(HTML5 规范指出他们是可选的);
     (5) 不要忽略可选的关闭标签，例：</li> 和 </body> 
  
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>Page title</title>
+            </head>
+            <body>
+                <img src="images/company_logo.png" alt="Company">
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Page title</title>
-    </head>
-    <body>
-        <img src="images/company_logo.png" alt="Company">
-
-        <h1 class="hello-world">Hello, world!</h1>
-    </body>
-</html>
+                <h1 class="hello-world">Hello, world!</h1>
+            </body>
+        </html>
 
 2.2 HTML5 DOCTYPE
     在页面开头使用这个简单的doctype来启用标准模式，使其在每个浏览器中尽可能一致地展现；
     虽然doctype不区分大小写，但是按照惯例，DOCTYPE大写。
 
-    <!DOCTYPE html>
-    <html>
-    	...
-    </html>
+        <!DOCTYPE html>
+        <html>
+            ...
+        </html>
 
 2.3 lang属性
     根据HTML5规范：应在html标签上加上lang属性。这会给语音工具和翻译工具帮助，告诉它们应当怎么去发音和翻译。
@@ -129,34 +128,34 @@
     而微软给出了一份更加详细的语言列表：https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/
     其中细分了zh-cn，zh-hk，zh-tw。
 
-    <!DOCTYPE html>
-    <html lang="en-us">
-        ...
-    </html>
+        <!DOCTYPE html>
+        <html lang="en-us">
+            ...
+        </html>
 
 2.4 字符编码
     通过声明一个明确的字符编码，让浏览器轻松、快速的确定合适网页内容的渲染方式，通常指定为'UTF-8'。
 
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-        </head>
-        ...
-    </html>
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <meta charset="UTF-8">
+            </head>
+            ...
+        </html>
 
 2.5 IE兼容模式
     用<meta>标签可以指定页面应该用什么版本的IE来渲染；
     了解更多：https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do
     不同DOCTYPE在不同浏览器下会触发不同的渲染模式：https://hsivonen.fi/doctype/
 
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        </head>
-        ...
-    </html>
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+            </head>
+            ...
+        </html>
 
 2.6 引入CSS，JS
     根据HTML5规范，通常在引入CSS和JS时不需要指明 type，因为 text/css 和 text/javascript分别是他们的默认值。
@@ -165,21 +164,21 @@
         (2) 使用style：https://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element
         (3) 使用script：https://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element
 
-        <!-- External CSS -->
-        <link rel="stylesheet" href="code_guide.css">
+            <!-- External CSS -->
+            <link rel="stylesheet" href="code_guide.css">
 
-        <!-- In-document CSS -->
-        <style>
-            ...
-        </style>
+            <!-- In-document CSS -->
+            <style>
+                ...
+            </style>
 
-        <!-- External JS -->
-        <script src="code_guide.js"></script>
+            <!-- External JS -->
+            <script src="code_guide.js"></script>
 
-        <!-- In-document JS -->
-        <script>
-            ...
-        </script>
+            <!-- In-document JS -->
+            <script>
+                ...
+            </script>
 
 2.7 属性顺序
     属性应该按照特定的顺序出现以保证易读性；
@@ -220,19 +219,19 @@
 2.10 减少标签数量
     在编写HTML代码时，需要尽量避免多余的父节点；很多时候，需要通过迭代和重构来使HTML变得更少。
 
-    <!-- Not well -->
-    <span class="avatar">
-        <img src="...">
-    </span>
+        <!-- Not well -->
+        <span class="avatar">
+            <img src="...">
+        </span>
 
-    <!-- Better -->
-    <img class="avatar" src="...">
+        <!-- Better -->
+        <img class="avatar" src="...">
 
 2.11 实用高于完美
     尽量遵循HTML标准和语义，但是不应该以浪费实用性作为代价；
     任何时候都要用尽量下的复杂度和尽量少的标签来解决问题。
 
-
+==========3.CSS,SCSS==========
 
     
     
