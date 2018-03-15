@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-14 20:19:16
+ * @Last Modified time: 2018-03-15 19:23:39
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -158,7 +158,30 @@
         ...
     </html>
 
-    
+2.6 引入CSS，JS
+    根据HTML5规范，通常在引入CSS和JS时不需要指明 type，因为 text/css 和 text/javascript分别是他们的默认值。
+    HTML5规范链接：
+        (1) 使用link：https://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element
+        (2) 使用style：https://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element
+        (3) 使用script：https://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="code_guide.css">
+
+        <!-- In-document CSS -->
+        <style>
+            ...
+        </style>
+
+        <!-- External JS -->
+        <script src="code_guide.js"></script>
+
+        <!-- In-document JS -->
+        <script>
+            ...
+        </script>
+
+
 
 
 
