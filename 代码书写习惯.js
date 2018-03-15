@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-15 19:30:02
+ * @Last Modified time: 2018-03-15 19:35:37
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -200,6 +200,19 @@
     <input class="form-control" type="text">
 
     <img src="..." alt="...">
+
+2.8 boolean属性
+    boolean属性指不需要声明取值的属性，XHTML需要每个声明取值，但是HTML5并不需要；
+    更多内容可以参考：www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes
+        boolean属性的存在表示取值为true，不存在则表示取值为false。
+
+        <input type="text" disabled>
+
+        <input type="checkbox" value="1" checked>
+
+        <select>
+            <option value="1" selected>1</option>
+        </select>
 
 
 
