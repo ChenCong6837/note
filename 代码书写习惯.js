@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-15 19:35:37
+ * @Last Modified time: 2018-03-15 19:37:26
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -213,6 +213,9 @@
         <select>
             <option value="1" selected>1</option>
         </select>
+
+2.9 JS生成标签
+    在JS文件中生成标签让内容变得更难查找，更难编辑，性能更差，应该尽量避免这种情况的出现。
 
 
 
