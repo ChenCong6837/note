@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-16 19:57:43
+ * @Last Modified time: 2018-03-16 20:17:23
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -255,12 +255,80 @@
         background-color: red;
     }
 
+3.3 空格
+    以下几种情况不需要空格：
+        (1) 属性名后；
+        (2) 多个规则的分隔符','前；
+        (3) !important '!'后；
+        (4) 属性值中'('后和')'前；
+        (5) 行末不要有多余的空格；
 
+    以下几种情况需要空格：
+        (1) 属性值前；
+        (2) 选择器'>', '+', '~'前后；
+        (3) !important '!'前；
+        (4) @else 前后；
+        (5) 属性值中的','后； 
+        (6) 注释'/*'后和'* /'前；
+    
+            /* not good */
+            .element {
+                color :red! important;
+                background-color: rgba(0,0,0,.5);
+            }
 
-    
-    
-    
-    () 
+            /* good */
+            .element {
+                color: red !important;
+                background-color: rgba(0, 0, 0, .5);
+            }
+
+            /* not good */
+            .element ,
+            .dialog{
+                ...
+            }
+
+            /* good */
+            .element,
+            .dialog {
+
+            }
+
+            /* not good */
+            .element>.dialog{
+                ...
+            }
+
+            /* good */
+            .element > .dialog{
+                ...
+            }
+
+            /* not good */
+            .element{
+                ...
+            }
+
+            /* good */
+            .element {
+                ...
+            }
+
+            /* not good */
+            @if{
+                ...
+            }@else{
+                ...
+            }
+
+            /* good */
+            @if {
+                ...
+            } @else {
+                ...
+            }
+
 
 
     
