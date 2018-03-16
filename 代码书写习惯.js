@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-16 19:53:54
+ * @Last Modified time: 2018-03-16 19:57:43
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -244,6 +244,17 @@
             width: 50px;
             height: 50px;
         }
+
+3.2 分号
+    每个属性声明末尾都要加分号。
+
+    .element {
+        width: 20px;
+        height: 20px;
+
+        background-color: red;
+    }
+
 
 
     
