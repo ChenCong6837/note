@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-15 19:43:11
+ * @Last Modified time: 2018-03-16 19:53:54
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -232,6 +232,19 @@
     任何时候都要用尽量下的复杂度和尽量少的标签来解决问题。
 
 ==========3.CSS,SCSS==========
+3.1 缩进
+    使用 soft tab（4个空格）。
+    
+        .element {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+
+            border-radius: 10px;
+            width: 50px;
+            height: 50px;
+        }
+
 
     
     
