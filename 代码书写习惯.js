@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-16 20:17:23
+ * @Last Modified time: 2018-03-16 20:22:14
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -271,62 +271,92 @@
         (5) 属性值中的','后； 
         (6) 注释'/*'后和'* /'前；
     
-            /* not good */
+            // not good
             .element {
                 color :red! important;
                 background-color: rgba(0,0,0,.5);
             }
 
-            /* good */
+            // good 
             .element {
                 color: red !important;
                 background-color: rgba(0, 0, 0, .5);
             }
 
-            /* not good */
+            // not good
             .element ,
             .dialog{
                 ...
             }
 
-            /* good */
+            // good 
             .element,
             .dialog {
 
             }
 
-            /* not good */
+            // not good
             .element>.dialog{
                 ...
             }
 
-            /* good */
+            // good 
             .element > .dialog{
                 ...
             }
 
-            /* not good */
+            // not good
             .element{
                 ...
             }
 
-            /* good */
+            // good 
             .element {
                 ...
             }
 
-            /* not good */
+            // not good 
             @if{
                 ...
             }@else{
                 ...
             }
 
-            /* good */
+            // good
             @if {
                 ...
             } @else {
                 ...
+            }
+
+3.4 空行
+    以下几种情况需要空行：
+        (1) 文件最后保留一个空行；
+        (2) '}'后最好跟一个空行，包括scss中嵌套的规则；
+        (3) 属性之间需要适当的空行，具体见属性声明顺序：
+
+            // not good 
+            .element {
+                ...
+            }
+            .dialog {
+                color: red;
+                &:after {
+                    ...
+                }
+            }
+
+            // good 
+            .element {
+                ...
+            }
+
+            .dialog {
+                color: red;
+
+                &:after {
+                    ...
+                }
             }
 
 
