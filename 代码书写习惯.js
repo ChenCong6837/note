@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-16 20:22:14
+ * @Last Modified time: 2018-03-17 21:49:55
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -359,6 +359,33 @@
                 }
             }
 
+3.5 换行
+    以下几种情况不需要换行：'{'前。
+    以下几种情况需要换行：
+        (1) ‘{’后和‘}’前；
+        (2) 每个属性独占一行；
+        (3) 多个规则的分隔符','后
+
+        // not good 
+        .element
+        {color: red; background-color: black;}
+
+        // good
+        .element {
+            color: red;
+            background-color: black;
+        }
+
+        // not good 
+        .element, .dialog {
+            ...
+        }
+
+        // good 
+        .element,
+        .dialog {
+            ...
+        }
 
 
     
