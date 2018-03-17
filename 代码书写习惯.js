@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-17 21:49:55
+ * @Last Modified time: 2018-03-17 21:55:39
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -386,6 +386,30 @@
         .dialog {
             ...
         }
+
+3.6 注释
+    注释统一用'/* * /'(scss中也不要用‘//’)，缩进与下一行代码保持一致；
+    可位于一个代码行的末尾，与代码间隔一个空格。
+
+        /* Modal header */
+        .modal-header {
+            ...
+        }
+
+        /*
+        * Modal header
+        */
+        .modal-header {
+            ...
+        }
+
+        .modal-header {
+            /* 50px */
+            width: 50px;
+
+            color: red; /* color red */
+        }
+/*
 
 
     
