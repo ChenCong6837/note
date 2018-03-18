@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-17 21:55:39
+ * @Last Modified time: 2018-03-18 20:12:15
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -410,6 +410,19 @@
             color: red; /* color red */
         }
 /*
+3.7 引号
+    最外层统一使用双引号；
+    url的内容要用引号；
+    属性选择器中的属性值需要引号。
+
+        .element:after {
+            content: "";
+            background-image: url("logo.png");
+        }
+
+        li[data-type="single"] {
+            ...
+        }
 
 
     
