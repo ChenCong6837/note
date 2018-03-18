@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-18 20:12:15
+ * @Last Modified time: 2018-03-18 20:15:42
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -421,6 +421,39 @@
         }
 
         li[data-type="single"] {
+            ...
+        }
+
+3.8 命名
+    (1) 类名使用小写字母，以中划线分隔；
+    (2) id采用驼峰式命名；
+    (3) scss中的变量、函数、混合、placeholder采用驼峰式命名。
+
+        // class 
+        .element-content {
+            ...
+        }
+
+        // id
+        #myDialog {
+            ...
+        }
+
+        // 变量 
+        $colorBlack: #000;
+
+        // 函数 
+        @function pxToRem($px) {
+            ...
+        }
+
+        // 混合
+        @mixin centerBlock {
+            ...
+        }
+
+        // placeholder
+        %myDialog {
             ...
         }
 
