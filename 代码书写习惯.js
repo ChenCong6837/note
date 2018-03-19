@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-19 21:41:24
+ * @Last Modified time: 2018-03-19 21:46:12
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -809,6 +809,26 @@
             background-color: #012;
         }
 
+3.11 属性简写
+    属性简写需要你非常清楚属性值的正确顺序，而且在大多数情况下并不需要设置属性简写中
+    包含的所有值，所以建议尽量分开声明会更加清晰；
+    margin 和 padding 相反，需要使用简写；
+    常见的属性简写包括：font、background、transition、animation。
+
+        // not good
+        .element {
+            transition: opacity 1s linear 2s;
+        }
+
+        // good
+        .element {
+            transition-delay: 2s;
+            transition-timing-function: linear;
+            transition-duration: 1s;
+            transition-property: opacity;
+        }
+
+ 
 
     
 
