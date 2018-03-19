@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-19 21:39:39
+ * @Last Modified time: 2018-03-19 21:41:24
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -792,6 +792,22 @@
                 "pointer-events"
             ]
         ]
+
+3.10 颜色
+    颜色16进制用小写字母；
+    颜色16进制尽量用简写。
+
+        // not good
+        .element {
+            color: #ABCDEF;
+            background-color: #001122;
+        }
+
+        // good
+        .element {
+            color: #abcdef;
+            background-color: #012;
+        }
 
 
     
