@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-20 21:37:39
+ * @Last Modified time: 2018-03-20 21:43:15
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -850,7 +850,48 @@
             }
         }
 
+3.13 SCSS相关
+    提交的代码中不要有 @debug；
+    声明顺序：
+        (1) @entend
+        (2) 不包含 @content 的@include
+        (3) 包含 @content 的@include
+        (4) 自身属性
+        (5) 嵌套规则
+    @import 引入的文件不需要开头的 '_' 和结尾的 '.scss'；
+    嵌套最多不超过5层；
+    @extend 中使用 placeholder 选择器；
+    去掉不必要的父级引用符号 '&'。
 
+        // not good 
+        @import "_dialog.scss";
+
+        // good
+        @import "dialog";
+
+        // not good 
+        .fatal {
+            @extend .error;
+        }
+
+        // good 
+        .fatal {
+            @extend %error;
+        }
+
+        // not good 
+        .element {
+            & > .dialog {
+                ...
+            }
+        }
+
+        // good 
+        .element {
+            > .dialog {
+                ...
+            }
+        }
 
 
  
