@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-20 21:43:15
+ * @Last Modified time: 2018-03-20 21:52:49
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -892,6 +892,100 @@
                 ...
             }
         }
+
+3.14 杂项
+    不允许有空的规则；
+    元素选择器用小写字母；
+    去掉小数点前面的0；
+    去掉数字中不必要的小数点和末尾的0；
+    属性值'0'后不要加单位；
+    通过属性不同前缀的写法需要再垂直方向保持对齐，具体参照下面的写法；
+    无前缀的标准属性应该写在有前缀的属性后面；
+    不要在同个规则里出现重复的属性，如果重复的属性是连续的则没关系；
+    用 border:0; 替代 border:none;；
+    选择器不要超过4层（在scss中如果超过4层应该考虑嵌套的方式来写）；
+    发布的代码中不要有 @import ；
+    尽量少用 '*' 选择器。
+
+        // not good
+        .element {
+        }
+
+        // not good 
+        LI {
+            ...
+        }
+
+        // good 
+        li {
+            ...
+        }
+
+        // not good 
+        .element {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        // good 
+        .element {
+            color: rgba(0, 0, 0, .5);
+        }
+
+        // not good 
+        .element {
+            width: 50.0px;
+        }
+
+        // good 
+        .element {
+            width: 50px;
+        }
+
+        // not good
+        .element {
+            width: 0px;
+        }
+
+        // good 
+        .element {
+            width: 0;
+        }
+
+        // not good 
+        .element {
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+
+            background: linear-gradient(to bottom, #fff 0, #eee 100%);
+            background: -webkit-linear-gradient(top, #fff 0, #eee 100%);
+            background: -moz-linear-gradient(top, #fff 0, #eee 100%);
+        }
+
+        // good 
+        .element {
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+                    border-radius: 3px;
+
+            background: -webkit-linear-gradient(top, #fff 0, #eee 100%);
+            background:    -moz-linear-gradient(top, #fff 0, #eee 100%);
+            background:         linear-gradient(to bottom, #fff 0, #eee 100%);
+        }
+
+        // not good 
+        .element {
+            color: rgb(0, 0, 0);
+            width: 50px;
+            color: rgba(0, 0, 0, .5);
+        }
+
+        // good 
+        .element {
+            color: rgb(0, 0, 0);
+            color: rgba(0, 0, 0, .5);
+        }
+
 
 
  
