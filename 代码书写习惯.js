@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-19 21:46:12
+ * @Last Modified time: 2018-03-20 21:37:39
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -827,6 +827,31 @@
             transition-duration: 1s;
             transition-property: opacity;
         }
+
+3.12 媒体查询
+    尽量将媒体查询的规则靠近与他们相关的规则，不要将他们一起放到一个独立的样式文件中，
+    或者丢在文档的最底部，这样做只会让大家以后更容易忘记他们。
+
+        .element {
+            ...
+        }
+
+        .element-avatar{
+            ...
+        }
+
+        @media (min-width: 480px) {
+            .element {
+                ...
+            }
+
+            .element-avatar {
+                ...
+            }
+        }
+
+
+
 
  
 
