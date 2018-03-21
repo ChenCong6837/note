@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-21 21:31:43
+ * @Last Modified time: 2018-03-21 21:34:58
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -998,6 +998,27 @@
         } else {
             x += 1;
         }
+
+4.2 分号
+    以下几种情况后需加分号：
+        (1) 变量声明；
+        (2) 表达式；
+        (3) return；
+        (4) throw；
+        (5) break；
+        (6) continue；
+        (7) do-while；
+
+        // var declaration
+        var x = 1;
+
+        // expression statement
+        x++;
+
+        // do-while 
+        do {
+            x++;
+        } while (x < 10);
 
 
  
