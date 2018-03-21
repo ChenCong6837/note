@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-20 21:52:49
+ * @Last Modified time: 2018-03-21 21:31:43
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -986,6 +986,18 @@
             color: rgba(0, 0, 0, .5);
         }
 
+==========4.JavaScript==========
+4.1 缩进
+    使用 soft tab （4个空格）。
+    
+        var x = 1,
+            y = 1;
+
+        if (x < y) {
+            x += 10;    
+        } else {
+            x += 1;
+        }
 
 
  
