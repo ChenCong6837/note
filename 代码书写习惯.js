@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-22 21:47:40
+ * @Last Modified time: 2018-03-22 21:51:02
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -1249,7 +1249,30 @@
         */
 /*      var x = 1;
 
+4.8 文档注释
+    各类标签@param，@method等请参考usejsdoc和JSDoc Guide：http://usejsdoc.org/ 和 http://yuri4ever.github.io/jsdoc/
+    建议在以下情况下使用：
+    (1) 所有常量
+    (2) 所有函数
+    (3) 所有类
 
+        /**
+         * @func
+         * @desc 一个带参数的函数
+         * @param {string} a - 参数a
+         * @param {number} b=1 - 参数b默认值为1
+         * @param {string} c=1 - 参数c有两种支持的取值</br>1—表示x</br>2—表示xx
+         * @param {object} d - 参数d为一个对象
+         * @param {string} d.e - 参数d的e属性
+         * @param {string} d.f - 参数d的f属性
+         * @param {object[]} g - 参数g为一个对象数组
+         * @param {string} g.h - 参数g数组中一项的h属性
+         * @param {string} g.i - 参数g数组中一项的i属性
+         * @param {string} [j] - 参数j是一个可选参数
+         */
+/*      function foo(a, b, c, d, g, j) {
+            ...
+        }
 
 
 
