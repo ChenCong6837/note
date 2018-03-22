@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-22 21:44:43
+ * @Last Modified time: 2018-03-22 21:47:40
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -1236,6 +1236,19 @@
         }
 
         var zhangsan = 'zhangsan'; // one space after code
+
+4.7 多行注释
+    最少三行，'*'后跟一个空格，建议在以下情况下使用：
+    (1) 难以理解的代码段
+    (2) 可能存在错误的代码
+    (3) 浏览器特殊的HACK代码
+    (4) 业务逻辑强相关的代码
+
+        /*
+        * one space after '*'
+        */
+/*      var x = 1;
+
 
 
 
