@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-22 21:41:59
+ * @Last Modified time: 2018-03-22 21:44:43
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -1224,6 +1224,19 @@
         var a,
             foo = 7,
             b, c, bar = 8;
+
+4.6 单行注释
+    双斜线后，必须跟一个空格；
+    缩进与下一行代码保持一致；
+    可位于一个代码行的末尾，与代码间隔一个空格。
+
+        if (condition) {
+            // if you made it here, then all security checks passed
+            allowed();
+        }
+
+        var zhangsan = 'zhangsan'; // one space after code
+
 
 
 
