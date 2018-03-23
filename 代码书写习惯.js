@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-23 21:57:59
+ * @Last Modified time: 2018-03-23 22:02:17
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -1316,6 +1316,23 @@
         // good
         var $body = $('body');
 
+4.11 变量声明
+    一个函数作用域中所有的变量声明尽量提到函数首部，用一个var声明（这条不一定，let，const），
+    不允许出现两个连续的 var 声明。
+    
+        function doSomethingWithItems(items) {
+            // use one var
+            var value = 10,
+                result = value + 10,
+                i,
+                len;
+
+            for (i = 0, len = items.length; i < len; i++) {
+                result += 10;
+            }
+        }
+
+    
 
 
 */
