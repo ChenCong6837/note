@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-23 21:49:08
+ * @Last Modified time: 2018-03-23 21:57:59
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -1284,6 +1284,37 @@
         var y = 'foo',
             z = '<div id="test"></div>';
 
+4.10 变量命名
+    (1) 标准变量采用驼峰式命名（除了对象的属性外，主要是考虑到cgi返回的数据）
+    (2) 'ID'在变量名中全大写
+    (3) 'URL'在变量名中大写第一个字母
+    (4) 'Android'在变量名中大写第一个字母
+    (5) 'iOS'在变量名中小写小写第一个，大写后面两个字母
+    (6) 常量全大写，用下划线连接
+    (7) 构造函数，大写第一个字母
+    (8) jquery对象必须以'$'开头命名
+
+        var thisIsMyName;
+
+        var goodID;
+
+        var reportURL;
+
+        var AndroidVersion;
+
+        var iOSVersion;
+
+        var MAX_COUNT = 10;
+
+        function Person(name) {
+            this.name = name;
+        }
+
+        // not good
+        var body = $('body');
+
+        // good
+        var $body = $('body');
 
 
 
