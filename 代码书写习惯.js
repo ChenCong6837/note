@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-22 21:51:02
+ * @Last Modified time: 2018-03-23 21:49:08
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -1273,6 +1273,16 @@
 /*      function foo(a, b, c, d, g, j) {
             ...
         }
+
+4.9 引号
+    最外层统一使用单引号。
+
+        // not good
+        var x = "test";
+
+        // good
+        var y = 'foo',
+            z = '<div id="test"></div>';
 
 
 
