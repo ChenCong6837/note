@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-24 20:41:30
+ * @Last Modified time: 2018-03-24 20:43:50
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -1449,6 +1449,21 @@
             if (a === null) {
                 ...
             }
+
+4.16 undefined
+    永远不要直接使用 undefined 进行变量判断；
+    使用typeof和字符串'undefined'对变量进行判断。
+
+        // not good
+        if (person === undefined) {
+            ...
+        }
+
+        // good
+        if (typeof person === 'undefined') {
+            ...
+        }
+
 
 
 
