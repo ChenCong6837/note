@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-24 20:17:49
+ * @Last Modified time: 2018-03-24 20:26:49
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -1406,6 +1406,19 @@
             b: 1,
             c: 2
         };
+
+4.14 括号
+    下列关键字后必须有大括号(即使代码块的内容只有一行)：if，else，for，while，do，switch，try，catch，finally，with。
+
+        // not good
+        if (condition)
+            doSomething();
+
+        // good
+        if (condition) {
+            doSomething();
+        }
+
 
 
     
