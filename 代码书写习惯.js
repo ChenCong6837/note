@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-23 22:02:17
+ * @Last Modified time: 2018-03-24 20:14:04
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -1331,6 +1331,58 @@
                 result += 10;
             }
         }
+
+4.12 函数
+    无论是函数声明还是函数表达式，'('前不要空格，但是'}'前一定要有空格；
+    函数调用括号前不需要空格；
+    立即执行函数外必须包一层括号；
+    不要给inline function命名；
+    参数之间用','分隔，注意逗号后有一个空格。
+
+        // no space before '(', but one space before'{'
+        var doSomething = function(item) {
+            // do something
+        };
+
+        function doSomething(item) {
+            // do something
+        }
+
+        // not good
+        doSomething (item);
+
+        // good
+        doSomething(item);
+
+        // requires parentheses around immediately invoked function expressions
+        (function() {
+            return 1;
+        })();
+
+        // not good
+        [1, 2].forEach(function x() {
+            ...
+        });
+
+        // good
+        [1, 2].forEach(function() {
+            ...
+        });
+
+        // not good
+        var a = [1, 2, function a() {
+            ...
+        }];
+
+        // good
+        var a = [1, 2, function() {
+            ...
+        }];
+
+        // use ', ' between function parameters
+        var doSomething = function(a, b, c) {
+            // do something
+        };
 
     
 
