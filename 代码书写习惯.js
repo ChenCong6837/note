@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-24 20:14:04
+ * @Last Modified time: 2018-03-24 20:17:49
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -1337,7 +1337,7 @@
     函数调用括号前不需要空格；
     立即执行函数外必须包一层括号；
     不要给inline function命名；
-    参数之间用','分隔，注意逗号后有一个空格。
+    参数之间用', '分隔，注意逗号后有一个空格。
 
         // no space before '(', but one space before'{'
         var doSomething = function(item) {
@@ -1383,6 +1383,30 @@
         var doSomething = function(a, b, c) {
             // do something
         };
+
+4.13 数组、对象
+    对象属性名不需要加引号；
+    对象以缩进的形式书写，不要写在一行；
+    数组、对象最后不要有逗号。
+    
+        // not good
+        var a = {
+            'b': 1
+        };
+
+        var a = {b: 1};
+
+        var a = {
+            b: 1,
+            c: 2,
+        };
+
+        // good
+        var a = {
+            b: 1,
+            c: 2
+        };
+
 
     
 
