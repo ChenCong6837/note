@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-24 20:26:49
+ * @Last Modified time: 2018-03-24 20:41:30
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -1418,6 +1418,37 @@
         if (condition) {
             doSomething();
         }
+
+4.15 null
+    适用场景：
+        (1) 初始化一个将来可能被赋值为对象的变量
+        (2) 对已经初始化的变量做比较
+        (3) 作为一个参数为对象的函数的调用传参
+        (4) 作为一个返回对象的函数的返回值
+    不适用场景：
+        (1) 不要用null来判断函数调用时有无传参
+        (2) 不要与未初始化的变量做比较
+
+            // not good
+            function test(a, b) {
+                if (b === null) {
+                    // not mean b is not supply
+                    ...
+                }
+            }
+
+            var a;
+
+            if (a === null) {
+                ...
+            }
+
+            // good
+            var a = null;
+
+            if (a === null) {
+                ...
+            }
 
 
 
