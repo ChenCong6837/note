@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-25 21:08:26
+ * @Last Modified time: 2018-03-25 21:15:44
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -1564,6 +1564,53 @@
                 privateVar = 2;
             };
         };
+
+4.18 杂项
+    不要混用tab和space；
+    不要在一处使用多个 tab 或 space；
+    换行符统一用 'LF'；
+    对上下文 this 的引用只能使用 '_this'， 'that', 'self' 其中一个；来命名；
+    行尾不要有空白字符；
+    switch 的 falling through 和 no default 的情况一定要有注释特别说明；
+    不允许有空的代码块；
+    
+        // not good
+        var a   = 1;
+
+        function Person() {
+            // not good
+            var me = this;
+
+            // good
+            var _this = this;
+
+            // good
+            var that = this;
+
+            // good
+            var self = this;
+        }
+
+        // good
+        switch (condition) {
+            case 1:
+            case 2:
+                ...
+                break;
+            case 3:
+                ...
+            // why fall through
+            case 4
+                ...
+                break;
+            // why no default
+        }
+
+        // not good with empty block
+        if (condition) {
+
+        }
+
 
 
 
