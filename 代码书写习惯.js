@@ -2,7 +2,7 @@
  * @Author: ChenCong 
  * @Date: 2018-03-13 18:55:11 
  * @Last Modified by: ChenCong
- * @Last Modified time: 2018-03-25 21:15:44
+ * @Last Modified time: 2018-03-26 19:17:53
  */
 
 //参考自：http://alloyteam.github.io/CodeGuide/#project-naming
@@ -392,23 +392,23 @@
     可位于一个代码行的末尾，与代码间隔一个空格。
 
         /* Modal header */
-        .modal-header {
-            ...
-        }
+//        .modal-header {
+//            ...
+//        }
 
         /*
         * Modal header
         */
-        .modal-header {
-            ...
-        }
+//        .modal-header {
+//            ...
+//        }
 
-        .modal-header {
-            /* 50px */
-            width: 50px;
+//        .modal-header {
+//            /* 50px */
+//            width: 50px;
 
-            color: red; /* color red */
-        }
+//            color: red; /* color red */
+//        }
 /*
 3.7 引号
     最外层统一使用双引号；
