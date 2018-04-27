@@ -25,6 +25,7 @@
 ## 三. 代码  
 1.高亮某个函数名或关键字，用 \`function_name\` 的方式，例如：  
 \`function_name\` 显示为：`function_name`  
+这种方法会将代码块在一行显示。  
 2.通过 \`\`\`language code \`\`\` 的方式来包裹一段代码，并指定一种语言。例如：  
 \`\`\` javascript  
 var name = 'ChenCong';  
