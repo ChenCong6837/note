@@ -40,14 +40,14 @@
 ## 三. 代码
 
 1. 高亮某个函数名或关键字，用 \`function_name\` 的方式，例如：  
-\`function_name\` 显示为：`function_name`  
-这种方法会将代码块在一行显示。  
+\`function_name\` 显示为：`function_name` ；  
+这种方法会将代码块在一行显示。
 2. 通过 \`\`\`language code \`\`\` 的方式来包裹一段代码，并指定一种语言，此方法会按照该语言的特性来对代码着色。例如：  
 \`\`\` javascript  
 var name = 'ChenCong';  
 function sayHello() {  
   console.log('hello!');  
-}   
+}  
 \`\`\`  
 显示为：  
 ```javascript
@@ -58,38 +58,41 @@ function sayHello() {
 ```
 **支持的语言有**：1c, abnf, accesslog, actionscript, ada, apache, applescript, arduino, armasm, asciidoc, aspectj, autohotkey, autoit, avrasm, awk, axapta, bash, basic, bnf, brainfuck, cal, capnproto, ceylon, clean, clojure, clojure-repl, cmake, coffeescript, coq, cos, cpp, crmsh, crystal, cs, csp, css, d, dart, delphi, diff, django, dns, dockerfile, dos, dsconfig, dts, dust, ebnf, elixir, elm, erb, erlang, erlang-repl, excel, fix, flix, fortran, fsharp, gams, gauss, gcode, gherkin, glsl, go, golo, gradle, groovy, haml, handlebars, haskell, haxe, hsp, htmlbars, http, hy, inform7, ini, irpf90, java, javascript, json, julia, kotlin, lasso, ldif, leaf, less, lisp, livecodeserver, livescript, llvm, lsl, lua, makefile, markdown, mathematica, matlab, maxima, mel, mercury, mipsasm, mizar, mojolicious, monkey, moonscript, n1ql, nginx, nimrod, nix, nsis, objectivec, ocaml, openscad, oxygene, parser3, perl, pf, php, pony, powershell, processing, profile, prolog, protobuf, puppet, purebasic, python, q, qml, r, rib, roboconf, rsl, ruby, ruleslanguage, rust, scala, scheme, scilab, scss, smali, smalltalk, sml, sqf, sql, stan, stata, step21, stylus, subunit, swift, taggerscript, tap, tcl, tex, thrift, tp, twig, typescript, vala, vbnet, vbscript, vbscript-html, verilog, vhdl, vim, x86asm, xl, xml, xquery, yaml, zephir  
 如果不需要代码高亮的话，可以用下面的方法禁用：  
-\`\`\` nohighlight   
+\`\`\` nohighlight  
 code  
 \`\`\`  
-例如：   
- \`\`\` nohighlight   
+例如：  
+ \`\`\` nohighlight  
 var name = 'ChenCong';  
 function sayHello() {  
   console.log('hello!');  
 }  
-\`\`\`    
+\`\`\`  
 显示为：
 ```nohighlight
 var name = 'ChenCong';  
 function sayHello() {  
   console.log('hello!');  
 }
-```  
+```
+
 ## 四. 粗体和斜体
+
 * 斜体：用`*斜体字体*`表示，效果为 *斜体字体*
 * 粗体：用`**粗体字体**`表示，效果为 **粗体字体**
-* 粗斜体：用`***粗斜体***`表示，效果为 ***粗斜体***  
-## 五. 列表  
+* 粗斜体：用`***粗斜体***`表示，效果为 ***粗斜体***
+
+## 五. 列表
+
 1. 有序列表，通过`序号.（空格）内容`的形式表达  
   例如：
-  ``` 
+  ```  
   1. A  
   2. B  
   3. C
-   ```
+  ```
 显示为：  
-    1. A  
-    2. B   
-    3. C      
-        
-2. 无序列表
+  1. A  
+  2. B   
+  3. C  
+2. 
