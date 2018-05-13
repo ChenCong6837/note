@@ -129,3 +129,55 @@ function sayHello() {
 
 3. 不换行空格：`&nbsp;`或`&#160;`，使用4个`&#160;`即可。
 
+## 七. 设置字体的字号、颜色及大小
+
+&emsp;&emsp;字体相关的功能markdown本身也没有提供对应方法，同样需要内嵌HTML的方式来实现，为需要设置样式的文字添加`<font>`标签，然后再标签中添加属性**face、color、size**分别设置字体、颜色以及大小。
+
+如下例子：
+```
+<font face="黑体">我是黑体字</font>
+<font face="微软雅黑">我是微软雅黑</font>
+<font face="STCAIYUN">我是华文彩云</font>
+<font color=#00ffff>颜色为#00ffff</font>
+<font color=red>颜色为red</font>
+<font size=1>字体大小为1</font>
+<font size=2>字体大小为2</font>
+<font size=3>字体大小为3</font>
+<font size=4>字体大小为4</font>
+<font size=5>字体大小为5</font>
+<font size=6>字体大小为6</font>
+<font size=7>字体大小为7</font>
+<font size=8>字体大小为8</font>
+<font color=#0099ff size=5 face="STCAIYUN">颜色为#0099ff、大小为72、字体为"华文彩云"</font>
+```
+显示的效果为：
+
+&emsp;&emsp;<font face="黑体">我是黑体字</font>
+
+&emsp;&emsp;<font face="微软雅黑">我是微软雅黑</font>
+
+&emsp;&emsp;<font face="STCAIYUN">我是华文彩云</font>
+
+&emsp;&emsp;<font color=#00ffff>颜色为#00ffff</font>
+
+&emsp;&emsp;<font color=red>颜色为red</font>
+
+&emsp;&emsp;<font size=1>字体大小为1</font>
+
+&emsp;&emsp;<font size=2>字体大小为2</font>
+
+&emsp;&emsp;<font size=3>字体大小为3</font>
+
+&emsp;&emsp;<font size=4>字体大小为4</font>
+
+&emsp;&emsp;<font size=5>字体大小为5</font>
+
+&emsp;&emsp;<font size=6>字体大小为6</font>
+
+&emsp;&emsp;<font size=7>字体大小为7</font>
+
+&emsp;&emsp;<font size=8>字体大小为8</font>
+
+&emsp;&emsp;<font color=#0099ff size=5 face="STCAIYUN">颜色为#0099ff、大小为72、字体为"华文彩云"</font>
+
+&emsp;&emsp;**备注：** 字体的size取值为1到7的整数，超过7则设置为7的大小，系统默认大小为3。字体的color值可为颜色的英文名或以16进制形式来表示。当然，以上的几个属性可以组合使用。
