@@ -185,5 +185,22 @@ function sayHello() {
 ## 八. 链接
 
 &emsp;&emsp;常用的链接方法：
-* **文字链接：**`[链接名称](http://链接网址)`
+
+* **文字链接：**`[链接名称](http://链接网址 "可选的title")`，其中title为鼠标悬停在链接上显示的内容。
+
+&emsp;&emsp;例如：`[码飞_CC的博客](https://blog.csdn.net/cc18868876837 "这是我的博客")`，即显示为[码飞_CC的博客](https://blog.csdn.net/cc18868876837 "这是我的博客")
+
 * **网址链接：**`<http://链接网址>`
+
+&emsp;&emsp;高级的链接技巧：
+
+* 这个链接用1作为网站变量`[码飞_CC的博客][1]`
+* 这个链接用`bing`作为网址变量`[Bing!][bing]`
+
+&emsp;&emsp;然后在文档的后面为变量赋值（即网址，在显示时，这些变量并不显示）即可：
+
+&emsp;&emsp;`[1]: https://blog.csdn.net/cc18868876837/ "可选的title"`
+
+&emsp;&emsp;`[bing]: https://cn.bing.com/`
+
+&emsp;&emsp;**注意:** 网址赋值时，方括号前面不可以超过3个空格，否则会失效。
