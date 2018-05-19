@@ -204,3 +204,9 @@ function sayHello() {
 &emsp;&emsp;`[bing]: https://cn.bing.com/`
 
 &emsp;&emsp;**注意:** 网址赋值时，方括号前面不可以超过3个空格，否则会失效。
+
+## 九. 图片
+
+&emsp;&emsp;跟链接最大的差别就是在前面加了一个`!`号：`![图片名称](http://图片地址)`
+
+&emsp;&emsp;同理，图片也可以像链接一样的方法对图像地址使用变量。
